@@ -80,7 +80,7 @@ var demo = new function() {
     var runningUpdateThread = false;
     function runUpdateThread() {
       if (hasMoveEvent) {
-        console.log ("updating");
+        // console.log ("updating");
         updateMainGraph();
         hasMoveEvent = false;
       }
@@ -117,17 +117,13 @@ var demo = new function() {
       maingraph.xScale.domain(newx);
 
       path = maingraph.svg.select('.plot');
-      if (transTime > 0) {
+      if (transTime > 0)
         path = path.transition().duration(transTime).ease("linear");
-        lastTransitionOnPath = path;
-      }
       path.attr('d', maingraph.lineFunc(maingraph.options.data));
 
       xaxis = maingraph.svg.select(".x.axis");
-      if (transTime > 0) {
+      if (transTime > 0)
         xaxis = xaxis.transition().duration(transTime).ease("linear");
-        lastTransitionOnAxis = xaxis;
-      }
       xaxis.call(maingraph.xAxis);
 
       selections = maingraph.svg.selectAll('.selection')
@@ -437,5 +433,4 @@ LineGraph = function(container, options) {
           .attr("d", arc);
       }
     }
-
-    }
+}
