@@ -5,20 +5,67 @@
 
 html{
 	background:url('../img/background.jpg');
+  font-size: 16px;
 }
 
 body{
-	min-height:500px;
-	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	/* min-height:500px; */
+  font-family: Helvetica;
 	color:#888;
 	padding:10px;
+}
+
+/*-------------------------
+	Demo Page Styles
+--------------------------*/
+
+header{
+	display:block;
+	margin-top:4rem;
+	position:relative;
+	color: #fff;
+	line-height: 1;
+	background-color: #062949;
+	text-align: center;
+}
+h1{
+	font-weight: normal;
+  font-size: 3rem;
+	padding: 10px;
+}
+h2{
+	font-weight: normal;
+  font-size: 1.1rem;
+	padding: 10px;
+}
+nav{
+	display: block;
+	margin: 2.5em auto 0;
+	text-align: center;
+  font-size: 1.6rem;
+}
+.content{
+  font-size: 1.3rem;
+	color: black;
+	line-height: 1.6;
+	padding: 30px 20px 0;
+	margin: 0px auto 0;
+	display:block;
+  max-width: 35em;
+}
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+a:hover{
+	text-decoration:underline;
 }
 
 
 /*----------------------------
 	CSS3 Animated Navigation
 -----------------------------*/
-
 
 .fancyNav{
 	/* Affects the UL element */
@@ -135,8 +182,8 @@ body{
 .fancyNav li a{
 	color: #5d5d5d;
 	display: inline-block;
-	font: 20px/1 'Segoe UI Light','Segoe UI',Arial,sans-serif;
-	padding: 12px 35px 14px;
+	/* padding: 12px 35px 14px; */
+	padding: 0.6em 2em 0.6em;
 	position: relative;
 	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
 	z-index:2;
@@ -152,74 +199,4 @@ body{
 	padding-right: 12px;
 	text-indent: -9999px;
 	width: 16px;
-}
-
-
-/*-------------------------
-	Demo Page Styles
---------------------------*/
-
-
-h1,h2{
-	color: #fff;
-	line-height: 1;
-	background-color: #062949;
-	font-family: 'Segoe UI Light','Segoe UI',Arial,sans-serif;
-	font-weight: normal;
-	margin: 0 auto;
-	text-align: center;
-	left: 50%;
-	
-}
-
-h1{
-	font-size: 36px;
-	padding: 5px 15px 10px;
-	top: 0;
-}
-
-h2{
-	font-size: 14px;
-	padding: 4px 13px 9px 11px;
-	top: 51px;
-}
-
-header{
-	display:block;
-	margin-top:50px;
-	position:relative;
-}
-
-nav{
-	display: block;
-	margin: 50px auto 0;
-	text-align: center;
-	width: 80%;
-}
-
-footer{
-	color: black;
-	font-size: 15px;
-	line-height: 1.6;
-	padding: 30px 20px 0;
-	margin: 0px auto 0;
-	display:block;
-	max-width: 550px;
-}
-
-footer b{
-	//color: #888888;
-	display: block;
-	font-size: 10px;
-	font-weight: normal;
-}
-
-a, a:visited {
-	text-decoration:none;
-	outline:none;
-	color:#54a6de;
-}
-
-a:hover{
-	text-decoration:underline;
 }
