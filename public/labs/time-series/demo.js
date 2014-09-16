@@ -278,7 +278,8 @@ var demo = new function() {
           hideEditBox(this);
         }
       }
-      function updateTag(obj, allowEmpty=true) {
+      function updateTag(obj, allowEmpty) {
+        if (allowEmpty === undefined) allowEmpty = true;
         hasTag = true;
         if (allowEmpty || obj.value.trim() != "")
           tag.text(obj.value).style('opacity', 1);
