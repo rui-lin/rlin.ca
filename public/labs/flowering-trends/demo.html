@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="demo.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Line Graph Demo</title>
+    <script>
+      function addFlowerRecord() {
+        demo.addRecord({
+          'species_name': document.getElementById("species_name").value,
+          'date': document.getElementById("date").value,
+          'day': document.getElementById("day").value,
+          'num_flowers': document.getElementById("num_flowers").value,
+          'contributor_id': document.getElementById("contributor_id").value
+        });
+        return false;
+      }
+    </script>
+  </head>
+  <body onload="demo.init()">
+    <h1>Flowering Trends</h1>
+    <div class="container" id="graph_container">
+    </div>
+    <div class="panel">
+      <h3>Add Record</h3>
+      <form name="myform" onSubmit="return addFlowerRecord();">
+        <label for="species_name">Species Name</label>
+        <input type="text" id="species_name" placeholder="Enter species name">
+        <label for="date">Date (MM/DD/YYYY)</label>
+        <input type="text" id="date" placeholder="Enter a date">
+        <label for="day">Julien Day</label>
+        <input type="text" id="day" placeholder="Enter flowering day">
+        <label for="num_flowers">Number of flowers</label>
+        <input type="text" id="num_flowers" placeholder="Enter # flowers">
+        <label for="contributor_id">Contributor ID</label>
+        <input type="text" id="contributor_id" placeholder="Enter id">
+        <input name="Submit"  type="submit" value="Add record" >
+      </form>
+    </div>
+  </body>
+</html>

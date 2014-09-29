@@ -1,0 +1,142 @@
+path.plot
+{
+  stroke: steelblue;
+  stroke-width: 2;
+  fill: none;
+}
+.plot .dot {
+  stroke: #666;
+  fill-opacity: .8;
+}
+.plot .shadow.gray {
+  fill: none;
+  stroke: #888;
+  stroke-width: 3;
+  stroke-opacity: .8;
+}
+.plot .shadow.yellow {
+  fill: none;
+  stroke: yellow;
+  stroke-width: 10;
+  stroke-opacity: 1;
+}
+.plot .trendline {
+  stroke-width: 2;
+}
+.horizontalGrid {
+  fill : none;
+  shape-rendering : crispEdges;
+  stroke : #aaa;
+  stroke-width : 1;
+}
+
+.axis path, .axis line
+{
+  fill: none;
+  stroke: #666;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.brush.white {
+  stroke: gray;
+  fill: #fff;
+  fill-opacity: .0125;
+  shape-rendering: crispEdges;
+}
+.brush.normal, .selection.rect {
+  stroke: #888;
+  fill: lightblue;
+  fill-opacity: .3;
+  shape-rendering: crispEdges;
+  position: relative;
+}
+rect.highlight {
+  stroke: #888;
+  fill: darkgreen;
+  fill-opacity: .5;
+  shape-rendering: crispEdges;
+  position: relative;
+}
+.brush .resize {
+  fill: #222;
+  fill-opacity: .8;
+}
+
+.selection.tag {
+  text-anchor: middle;
+  font-size: 20px;
+  fill: darkgreen;
+  cursor: pointer;
+}
+.container {
+  width: 80%;
+  height: 600px;
+  outline: thin solid #888;
+  float:left;
+}
+.panel {
+  float:right;
+  width: 18%;
+  border-style: solid;
+  border-color: #888;
+  border-width: 2;
+  padding: 5px;
+}
+.tooltip {
+  font-size: 0.5em;
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+.panel input{
+  width: 90%;
+}
+.overview.grid.background {
+  fill: white;
+}
+.grid.background {
+  fill: white;
+}
+.shader {
+  fill: #000;
+  fill-opacity: .6;
+}
+#overview .axis path, #overview .axis line {
+  stroke: gray;
+}
+#overview .axis .tick {
+  fill: #222;
+  font-size: 12pt;
+  stroke: none;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+body {
+  font-family: Helvetica;
+}
+.graph {
+  position: relative;
+  font-family: Helvetica;
+  overflow: hidden;
+}
+.selection.cross {
+  text-anchor: end;
+  fill: #555;
+  cursor: pointer;
+}
+.selection.cross:hover {
+  fill: darkred;
+}
+.selection.cross:active {
+  fill: rgb(240, 30, 40);
+}
+/* disable text selection */
+svg *::selection {
+  background : transparent;
+}
+svg *::-moz-selection {
+  background:transparent;
+}
+svg *::-webkit-selection {
+  background:transparent;
+}
