@@ -21,12 +21,13 @@ body{
 
 header{
 	display:block;
-	margin-top:4rem;
 	position:relative;
 	color: #fff;
 	line-height: 1;
 	background-color: #062949;
 	text-align: center;
+  max-width: 60em;
+  margin: 3rem auto 0 auto;
 }
 h1{
 	font-weight: normal;
@@ -48,7 +49,7 @@ nav{
   font-size: 1.3rem;
 	color: black;
 	line-height: 1.6;
-	padding: 30px 20px 0;
+  padding: 30px 20px 0;
 	margin: 0px auto 0;
 	display:block;
   max-width: 35em;
@@ -200,3 +201,26 @@ a:hover{
 	text-indent: -9999px;
 	width: 16px;
 }
+
+.block {
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5px;
+  bottom: 5px;
+	margin: 0 auto;
+  max-width: 60em;
+  background-color: rgba(255,255,255,0.7);
+  min-height: 98%;
+  z-index: -1;
+}
+body {
+  position:relative;
+  min-height: 95%;
+  padding-bottom: 3rem;
+}
+html {
+  height: 95%;
+}
+
